@@ -1,0 +1,82 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>La Cervecerería</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#menu" class="botonMenu"><img src="img/logo.png" alt="Logo"></a>
+        <nav id="menu">
+            <a href="inicio.html">Inicio</a>
+            <a  href="carta.html">Carta</a>
+            <a  href="cervezasNacionales.html">Cervezas</a>
+            <a id="escogido" href="reservas.html">Reservas</a>
+            <a  href="encuentranos.html">Encuéntranos</a>
+            <a href="#cerrar" class="cerrarMenu">Cerrar</a>
+        </nav>
+    </header>
+    <div class="cuerpoReservas">
+        <h1>Reservas</h1>
+        <form class="formularioReservas" action="reservas.php" method="post">
+            <label>Nombre <br>
+                <input type="text" name="nombre" id="nombre">
+            </label>
+            <label>Teléfono <br>
+                <input type="tel" name="telefono" id="telefono">
+            </label>
+            <label>Fecha <br>
+                <input type="date" name="fecha" id="fecha">
+            </label>
+            <label>Hora <br>
+                <input type="time" name="hora" id="hora" min="14:00" max="23:00">
+            </label>
+            <label>Personas <br>
+                <select name="personas" id="personas">
+                    <option value="1">1 Persona</option>
+                    <option value="2">2 Personas</option>
+                    <option value="3">3 Personas</option>
+                    <option value="4">4 Personas</option>
+                    <option value="5">5 Personas</option>
+                    <option value="6">6 Personas</option>
+                    <option value="7">7 Personas</option>
+                    <option value="8">8 Personas</option>
+                    <option value="9">9 Personas</option>
+                    <option value="10">10 Personas</option>
+                </select>
+            </label>
+            <input type="submit" value="RESERVAR">
+        </form>
+    </div>
+    <footer class="footerReservas">
+        <div class="contacto">
+            <p>Contacta con nosotros:</p>
+            <p>Atención al cliente</p>
+            <p class="negrita">Teléfono: 981346232</p>
+        </div>
+        <div class="consumo">
+            <p><span>La Cervecerería</span> recomienda un consumo responsable.</p>
+        </div>
+        <div class="redesSociales">
+            <p>Sígenos en nuestras Redes Sociales:</p>
+            <div class="iconos">
+                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+        <div class="politicas">
+            <a href="#">Aviso Legal</a>|
+            <a href="#">Política de privacidad</a>|
+            <a href="#">Política de Cookies</a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+</body>
+
+</html>

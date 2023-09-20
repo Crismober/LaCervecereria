@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*COMUNES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*CABECERAS*/
+
+header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+header .logo img{
+    width: 10%;
+    object-fit: cover;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-size: 18px;
+    margin: auto 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:not(#escogido):hover{
+    font-weight: bold;
+}
+
+#escogido{
+    font-weight: bold;
+    color: #E4B02B;
+}
+
+.botonMenu{
+    display: none;
+}
+
+.cerrarMenu {
+    display: none;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+        
+    }
+
+    .botonMenu {
+        display: block;
+        margin: auto 0;
+        font-size: 30px;
+        background-color: black;
+        cursor: pointer;
+        width: 50%;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+    .botonMenu img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    header {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 50%;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+      }
+      
+      nav:target {
+        display: block;
+      }
+    nav:target .cerrarMenu {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+
+
+
+/*H's*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #E4B02B;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    margin-top: 60px;
+    padding: 30px 2% 0 2%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.contacto {
+    font-weight: 20px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.consumo {
+    margin: auto auto;
+}
+
+.consumo span {
+    font-weight: bold;
+}
+
+.redesSociales {
+    font-weight: 10px;
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.redesSociales img {
+    width: 30px;
+    height: 30px;
+}
+
+.politicas {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 10px;
+}
+
+.politicas a {
+    color: white;
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        text-align: center;
+    }
+}
+
+
+/*INDEX*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#cuerpoIndex {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+#cuerpoIndex img {
+    width: 25%;
+    object-fit: cover;
+    margin-top: 3rem;
+    border-radius: 50%;
+}
+
+#h1Index {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+#navIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#navIndex a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#navIndex a:hover {
+    color: #E4B02B;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #navIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navIndex a {
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+/*INICIO*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.contenidoInicio {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+
+.lema {
+    font-size: 1.5rem;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    margin-top: 70px;
+}
+
+.imagenes img {
+    width: 40%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.imagenes h3 {
+    margin-bottom: 20px;
+}
+
+.bodega {
+    grid-column: 1;
+}
+
+.productos {
+    grid-column: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .contenidoInicio {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes img {
+        width: 80%;
+    }
+}
+
+
+
+/*CARTA*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+.contenidoCarta {
+    margin: 0 auto;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.articuloCarta {
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.subindice {
+    list-style-type: none;
+    font-weight: normal;
+}
+
+ul {
+    margin-left: 100px;
+}
+
+.indice span {
+    font-weight: normal;
+    position: absolute;
+    right: 20px;
+}
+
+.indice {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenidoCarta {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .articuloCarta {
+        margin-left: 0;
+    }
+}
+    
+
+
+/*CERVEZAS*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.cuerpoCervezas {
+    text-align: center;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+.navegacion a:hover {
+    font-weight: bold;
+}
+
+.cervezas {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cerveza {
+    margin-bottom: 20px;
+}
+
+.precio {
+    margin-top: 10px;
+}
+
+.cerveza img {
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .cervezas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cerveza {
+        margin-bottom: 20px;
+    }
+}
+
+/*RESERVAS*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.cuerpoReservas {
+    height: 70%;
+}
+
+
+.formularioReservas {
+    border: 2px solid black;
+    display: grid;
+    width: 35%;
+    margin: 0 auto;
+    row-gap: 30px;
+    padding: 30px;
+    line-height: 25px;
+
+}
+
+label {
+    margin: 0 30%;
+}
+
+.formularioReservas input[type="submit"] {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.formularioReservas input[type="submit"]:hover {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 1px solid #E4B02B;
+    background-color: #E4B02B;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .formularioReservas {
+        width: 80%;
+    }
+}
+
+/*ENCUÉNTRANOS*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.cuerpoEncuentranos {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 1050px;
+}
+
+.formularioContacto {
+    display: grid;
+    width: 35%;
+    margin: 0 auto;
+    row-gap: 30px;
+    padding: 30px;
+    line-height: 25px;
+
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.plano {
+    width: 50%;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.info {
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 5px;
+}
+
+.enviar {
+    background-color: #E4B02B;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.enviar:hover {
+    background-color: black;
+    color: #E4B02B;
+    cursor: pointer;
+}
+
+    
+
+@media screen and (max-width: 768px) {
+    .formularioContacto {
+        width: 80%;
+    }
+
+    .plano {
+        width: 80%;
+    }
+}
+    
