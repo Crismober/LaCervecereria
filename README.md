@@ -34,7 +34,6 @@ Ejecuta el siguiente comando para clonar el repositorio en tu computadora:
 bash
 Copy code
 git clone https://github.com/Crismober/LaCervecereria
-Asegúrate de reemplazar tu-usuario con tu nombre de usuario de GitHub o la URL del repositorio si es diferente.
 
 Una vez que hayas clonado el repositorio, puedes abrir el archivo index.html en tu navegador web para ver la página web ficticia.
 
